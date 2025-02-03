@@ -1,4 +1,6 @@
-.{margin:0px; padding:0px;}
+*{
+    margin:0px; padding:0px;
+}
 
 body{
     background-color: #f3f0f0;
@@ -13,7 +15,9 @@ body{
   font-variation-settings:
     "wdth" 100;
 }
-
+ a{
+    text-decoration: none;
+ }
 
 /* Bannar style */
 
@@ -21,7 +25,7 @@ body{
     display: flex;
     justify-content: space-between;
     width:1280px;
-    height: 560;
+    height:400px;
     background-color: #C6E4D6;
     /* margin: 18px 160px; */
     padding: 100px 80px;
@@ -35,7 +39,7 @@ body{
 .bannar-title{
     font-size: 24;
     color: #706969;
-    font-weight: 400;
+    font-weight: 450px;
     margin-bottom: 16px;
 }
 .bannar-description{
@@ -50,8 +54,10 @@ body{
     color: #fff;
     font-weight: 600;
     background-color:#006A50;
+    margin-top: 24px;
 
     border-radius: 8px;
+    border: none;
     transition: 1s;
 	
 }
@@ -59,18 +65,29 @@ body{
     background-color:#fff;
     color:#006A50;
 }
+.ban-img{
 
+}
 .bannar-picture{
     width:475px;
+    height: 400px;
 }
 
 /* Vision feature  */
-
 .cards-sections{
-    /* margin:80px 160px; */
-    /* justify-content: space-between */
-    width:1280px;
+   
+    justify-content: space-between;
+    max-width:1280px;
+    gap:24px;
+
+}
+
+
     
+
+.cards{
+    /* width:1280px; */
+   
 }
 
 .card-main-title{
@@ -136,6 +153,7 @@ body{
     background-color: #5490F5;
     color: #FFFFFF;
     margin-bottom: 32px;
+    border: none;
     transition: 1s;
 
 }
@@ -150,6 +168,7 @@ body{
     margin-bottom: 32px;
     font-size:16px;
     font-weight:400;
+    border: none;
     /* padding: 20px 11px; */
     background-color: #09A15C;
     color: #FFFFFF;
@@ -167,6 +186,7 @@ body{
     margin-bottom: 32px;
     font-size:16px;
     font-weight:400;
+    border: none;
     /* padding: 20px 11px; */
     background-color: #FFC239;
     color: #FFFFFF;
@@ -225,10 +245,14 @@ div h3{
     padding: 48px;
     border-radius:24px;
 
-
+}
+div div h4{
+    font-weight: 400;
+    margin: 7px 0px;
 }
 div div h4 span{
     margin-left:30px;
+    
 }
 
 
@@ -258,6 +282,7 @@ div div h4 span{
     background-color:#006A50 ;
     color: #FFFFFF;
     border-radius: 8px;
+    border: none;
     font-size:18px;
     font-weight: 400;
     transition: 1s;
@@ -270,10 +295,16 @@ div div h4 span{
 
 .donate{
     width:1280px; height:465px;
-    align-content: center;
+    text-align: center;
 }
 .donate-title{
-    /* align-content: center; */
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.donate-description{
+    color:#0E0E0E;
+    margin-bottom: 32px;
 }
 ul{
     display: flex;
@@ -294,6 +325,7 @@ ul li button{
     font-size: 40px;
     font-weight: bold;
     border-radius: 10px;
+    border: none;
     transition: 1s;
 }
 ul li button:hover{
@@ -311,15 +343,96 @@ ul li button:hover{
     color:black;
 
 }
-/* .item3{
-    width:245px; height:128px;
-    background-color: #FFFFFF;
-    font-size: 40px;
-    font-weight: bold;
+div input{
+    width: 1032px;
+    height:10px ;
+    margin:0px 124px;
+    text-align: center;
+    border:none;
+    border-radius: 3px;
+    padding: 40px 20px;
+    font-size: 20px;
+    color:#0E0E0E;
 }
-.item4{
-    width:245px; height:128px;
+.donate-btn{
+    margin-top: 32px;
+    margin-bottom:80px;
+    width:170px;
+    height:78px;
+    background-color: #006A50;
+    padding:34px 17px;
+    border:none;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    color:#FFFFFF;
+    transition:1s;
+}
+.donate-btn:hover{
     background-color: #FFFFFF;
-    font-size: 40px;
+    color:#0E0E0E;
+    margin-bottom: 80px;
+}
+ /* footer-style */
+ 
+
+ .newsletter{
+    margin-top: 130px;
+    width:1280px; 
+    height:395px;
+    background-color:#C6E4D6;
+    border-radius: 10px;
+    padding: 100px 80px;
+    text-align: center;
+ }
+ .footer-title{
+    margin-bottom: 16px;
+
+ }
+ .emailsubscribe{
+    display:flex;
+    align-items: center;
+    width:750px;
+    height:56px;
+    /* margin-top: 25px 265px 25px 265px; */
+    margin-left: 265px;
+    margin-bottom: 50px;
+   
+   
+  
+    
+ }
+ .footer-description{
+    color:#706969;
+    font-size:16px;
+    margin-bottom: 50px;
+   
+ }
+ footer div input{
+    width:600px;
+    height:0pxpx;
+    margin:0px 0px;
+    text-align:left;
+    border-bottom-left-radius:10px ;
+    border-top-left-radius:10px ;
+ }
+ .subscribe-btn{
+    margin:0px 0px;
+    border: none;
+    width:150px;
+    height:90px;
+    padding: 34px 17px;
+    border-bottom-right-radius:10px ;
+    border-top-right-radius:10px ;
+    background-color: #006A50;
+    color:#FFFFFF;
+    font-weight:400;
+    font-size: 18px;
+ }
+ .subscribe-btn:hover{
+    background-color: #FFFFFF;
+    color:#18581e;
     font-weight: bold;
-} */ 
+ }
+
+
